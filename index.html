@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="section0">
+        <div class="triangle1"></div>
+        <h1>Do You Know Triangles ?</h1>
+        <button class="option menu">Learn About Triangles</button>
+        <button class="option menu">Angles of Triangle?</button>
+        <button class="option menu">Check Hypotenuse</button>
+        <button class="option menu">Calculate Area</button>
+        <button class="option menu">Take a Quiz</button>
+        <div class="triangle2"></div>
+    </section>
+
+    <section class="section1">
+        <h2>About Triangles</h2>
+        <h3>=> What are triangles?</h3>
+        <p class="answer">A triangle is a three-sided polygon, which has three vertices. The three sides are connected
+            with each other end to end at a point, which forms the angles of the triangle. The sum of all three angles
+            of the triangle is equal to 180 degrees.</p>
+
+        <h3>=> How many types of triangles are there?</h3>
+
+        <p class="answer">There are basically six types of triangles. They are:
+        <ul>
+            <ion-icon name="triangle-outline" class="icon-triangle"></ion-icon>
+            <li>Scalene Triangles</li>
+            <li>Isosceles triangles</li>
+            <li>Equilateral triangles</li>
+            <li>Acute triangles</li>
+            <li>Obtuse triangles</li>
+            <li>Right triangles</li>
+        </ul>
+        </p>
+
+        <h3>=> What are the properties of triangles?</h3>
+        <p class="answer">
+        <ul>
+            <li>Sum of angles of the triangle is equal to 180 degrees.</li>
+            <li>Exterior angles of a triangle add up to 360 degrees.</li>
+            <li>Shortest side is always opposite the smallest angle of a triangle.</li>
+        </ul>
+        </p>
+
+        <h3>=> What is the perimeter and area of a triangle?</h3>
+        <p class="answer">
+        <ul>
+            <li>The perimeter is the length of the outer boundary of the triangle.</li>
+            <li>area is the region occupied by it in a two-dimensional space.</li>
+        </ul>
+        </p>
+
+        <h3>=> What is the formula for area and perimeter of a triangle?</h3>
+        <p class="answer">
+        <ul>
+            <li>The perimeter of triangle = Sum of all three sides</li>
+            <li>Area = ½ (Product of base and height of a triangle)</li>
+        </ul>
+        </p>
+
+        <h3>=> What is scalene, isosceles and equilateral triangle?</h3>
+        <p class="answer">Scalene, isosceles and equilateral triangle are the types of triangles which differ from each
+            other based on their side-length.
+
+        <ul>
+            <li>If all the three sides are different in length, then its scalene triangle.</li>
+            <li>If any two sides are equal in length, then it is an isosceles triangle.</li>
+            <li>If all three sides are equal in length, then it is an equilateral triangle.</li>
+        </ul>
+        </p>
+
+        <h3>=> What is the difference between acute, obtuse and right triangles?</h3>
+        <p class="answer">
+        <ul>
+            <li>An acute triangle has all its angles less than 90 degrees.</li>
+            <li>An obtuse triangle has any one of its angle greater than 90 degrees.</li>
+            <li>A right triangle has exactly one angle equal to 90 degrees.</li>
+        </ul>
+        </p>
+    </section>
+
+    <section class="section2">
+        <h2>Angles of Triangle?</h2>
+        <h3>Enter three angles below to check if they make a triangle or not</h3>
+
+        <form action="#" class="section2-form">
+            <div>
+                <label for="angleA">angle a = </label>
+                <input type="number" id="angleA" required class="section2-input" min="1">
+                <span>deg</span>
+            </div>
+            <div>
+                <label for="angleB">angle b = </label>
+                <input type="number" required class="section2-input" id="angleB" min="1">
+                <span>deg</span>
+            </div>
+            <div>
+                <label for="angleC">angle c = </label>
+                <input type="number" required class="section2-input" id="angleC" min="1">
+                <span>deg</span>
+            </div>
+            <button class="btn-check option">Check</button>
+        </form>
+    </section>
+
+    <section class="section3">
+        <h2>Check Hypotenuse</h2>
+        <h3>Enter the lengths of base and height of triangle</h3>
+
+        <form action="#" class="section3-form">
+            <div>
+                <label for="section3-base">base = </label>
+                <input type="number" id="section3-base" required min="1">
+                <span>cm</span>
+            </div>
+            <div>
+                <label for="section3-height">height = </label>
+                <input type="number" required id="section3-height" min="1">
+                <span>cm</span>
+            </div>
+
+            <button class="btn-check option">Check</button>
+        </form>
+    </section>
+
+
+    <section class="section4">
+        <h2>Calculate Area</h2>
+        <h3>Select an option below as per the data you have for a triangle</h3>
+        <div>
+            <input type="radio" name="area-method-choice" id="box1" value="0">
+            <label for="box1" class="box-label">If you have base and height length</label>
+        </div>
+        <div>
+            <input type="radio" name="area-method-choice" id="box2" value="1">
+            <label for="box2" class="box-label">If you have length of 3 sides</label>
+        </div>
+        <div>
+            <input type="radio" name="area-method-choice" id="box3" value="2">
+            <label for="box3" class="box-label">If you have length of 2 sides and included angle</label>
+        </div>
+
+
+        <article class="section4-article">
+            <h4>Enter data in following input fields:</h4>
+
+            <form action="#" class="section4-form1">
+                <div>
+                    <label for="section4-base">base = </label>
+                    <input type="number" id="section4-base" required min="1">
+                    <span>cm</span>
+                </div>
+                <div>
+                    <label for="section4-height">height = </label>
+                    <input type="number" required id="section4-height" min="1">
+                    <span>cm</span>
+                </div>
+
+                <button class="areaMethod-1 option">Calculate</button>
+            </form>
+        </article>
+
+        <article class="section4-article">
+            <h4>Enter data in following input fields:</h4>
+
+            <form action="#" class="section4-form2">
+                <div>
+                    <label for="section4-a"> side a = </label>
+                    <input type="number" id="section4-a" required min="1">
+                    <span>cm</span>
+                </div>
+                <div>
+                    <label for="section4-b">side b = </label>
+                    <input type="number" required id="section4-b" min="1">
+                    <span>cm</span>
+                </div>
+                <div>
+                    <label for="section4-c">side c = </label>
+                    <input type="number" required id="section4-c" min="1">
+                    <span>cm</span>
+                </div>
+
+                <button class="areaMethod-2 option">Calculate</button>
+            </form>
+        </article>
+
+        <article class="section4-article">
+            <h4>Enter data in following input fields:</h4>
+
+            <form action="#" class="section4-form3">
+                <div>
+                    <label for="section4-sideB"> side b = </label>
+                    <input type="number" id="section4-sideB" required min="1">
+                    <span>cm</span>
+                </div>
+                <div>
+                    <label for="section4-sideC">side c = </label>
+                    <input type="number" required id="section4-sideC" min="1">
+                    <span>cm</span>
+                </div>
+                <div>
+                    <label for="section4-angleA">angle a = </label>
+                    <input type="number" required id="section4-angleA" min="1" max="360">
+                    <span>deg</span>
+                </div>
+
+                <button class="areaMethod-3 option">Calculate</button>
+            </form>
+        </article>
+
+    </section>
+
+    <p class="section-result result">Result</p>
+
+
+
+
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
