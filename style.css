@@ -30,6 +30,8 @@ body{
     transition-duration: 0.5s;
 }
 
+/* two triangles with animation */
+
 .triangle1,
 .triangle2 {
     width: 0;
@@ -72,7 +74,8 @@ section{
 
 .section2,
 .section3,
-.section4 {
+.section4,
+.section5 {
     display: none;
 }
 
@@ -88,7 +91,7 @@ section{
 }
 
 
-input {
+input[type="number"] {
     height: 25px;
     margin: 1rem 0;
     border: 3px inset white;
@@ -113,6 +116,7 @@ h4{
     margin: 0.5rem 0;
 }
 
+/* rotating triangle in learn about triangles section */
 .icon-triangle {
     color: white;
     font-size: 20vw;
@@ -129,11 +133,14 @@ h4{
     }
 }
 
+/* paragraph that shows error or result */
 .result {
     display: none;
     margin: 1rem auto;
     padding: 1rem 2rem;
 }
+
+
 
 @media (max-width:900px) {
     .option {
@@ -146,7 +153,11 @@ h4{
 }
 
 @media (max-width:414px) {
+    .option {
+        font-size: 6vw;
+    }
     section {
-        font-size: 5vw;
+        font-size: 5vw
+        ;
     }
 }

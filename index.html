@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Triangles _ are not fun</title>
+    <link rel="shortcut icon" href="images/triangle-outline.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -93,21 +94,22 @@
         <h3>Enter three angles below to check if they make a triangle or not</h3>
 
         <form action="#" class="section2-form">
-            <div>
-                <label for="angleA">angle a = </label>
+
+            <label for="angleA">angle a =
                 <input type="number" id="angleA" required class="section2-input" min="1">
                 <span>deg</span>
-            </div>
-            <div>
-                <label for="angleB">angle b = </label>
+            </label>
+            <br>
+            <label for="angleB">angle b =
                 <input type="number" required class="section2-input" id="angleB" min="1">
                 <span>deg</span>
-            </div>
-            <div>
-                <label for="angleC">angle c = </label>
+            </label>
+            <br>
+            <label for="angleC">angle c =
                 <input type="number" required class="section2-input" id="angleC" min="1">
                 <span>deg</span>
-            </div>
+            </label>
+
             <button class="btn-check option">Check</button>
         </form>
     </section>
@@ -117,16 +119,16 @@
         <h3>Enter the lengths of base and height of triangle</h3>
 
         <form action="#" class="section3-form">
-            <div>
-                <label for="section3-base">base = </label>
+
+            <label for="section3-base">base =
                 <input type="number" id="section3-base" required min="1">
                 <span>cm</span>
-            </div>
-            <div>
-                <label for="section3-height">height = </label>
+            </label>
+            <br>
+            <label for="section3-height">height =
                 <input type="number" required id="section3-height" min="1">
                 <span>cm</span>
-            </div>
+            </label>
 
             <button class="btn-check option">Check</button>
         </form>
@@ -136,34 +138,39 @@
     <section class="section4">
         <h2>Calculate Area</h2>
         <h3>Select an option below as per the data you have for a triangle</h3>
-        <div>
+
+        <label for="box1" class="box-label">
             <input type="radio" name="area-method-choice" id="box1" value="0">
-            <label for="box1" class="box-label">If you have base and height length</label>
-        </div>
-        <div>
+            If you have base and height length
+        </label>
+        <br>
+
+        <label for="box2" class="box-label">
             <input type="radio" name="area-method-choice" id="box2" value="1">
-            <label for="box2" class="box-label">If you have length of 3 sides</label>
-        </div>
-        <div>
+            If you have length of 3 sides
+        </label>
+        <br>
+
+        <label for="box3" class="box-label">
             <input type="radio" name="area-method-choice" id="box3" value="2">
-            <label for="box3" class="box-label">If you have length of 2 sides and included angle</label>
-        </div>
+            If you have length of 2 sides and included angle
+        </label>
 
 
         <article class="section4-article">
             <h4>Enter data in following input fields:</h4>
 
             <form action="#" class="section4-form1">
-                <div>
-                    <label for="section4-base">base = </label>
+
+                <label for="section4-base">base =
                     <input type="number" id="section4-base" required min="1">
                     <span>cm</span>
-                </div>
-                <div>
-                    <label for="section4-height">height = </label>
+                </label>
+                <br>
+                <label for="section4-height">height =
                     <input type="number" required id="section4-height" min="1">
                     <span>cm</span>
-                </div>
+                </label>
 
                 <button class="areaMethod-1 option">Calculate</button>
             </form>
@@ -173,21 +180,23 @@
             <h4>Enter data in following input fields:</h4>
 
             <form action="#" class="section4-form2">
-                <div>
-                    <label for="section4-a"> side a = </label>
+
+                <label for="section4-a"> side a =
                     <input type="number" id="section4-a" required min="1">
                     <span>cm</span>
-                </div>
-                <div>
-                    <label for="section4-b">side b = </label>
+                </label>
+                <br>
+
+                <label for="section4-b">side b =
                     <input type="number" required id="section4-b" min="1">
                     <span>cm</span>
-                </div>
-                <div>
-                    <label for="section4-c">side c = </label>
+                </label>
+                <br>
+
+                <label for="section4-c">side c =
                     <input type="number" required id="section4-c" min="1">
                     <span>cm</span>
-                </div>
+                </label>
 
                 <button class="areaMethod-2 option">Calculate</button>
             </form>
@@ -197,26 +206,84 @@
             <h4>Enter data in following input fields:</h4>
 
             <form action="#" class="section4-form3">
-                <div>
-                    <label for="section4-sideB"> side b = </label>
+
+                <label for="section4-sideB"> side b =
                     <input type="number" id="section4-sideB" required min="1">
                     <span>cm</span>
-                </div>
-                <div>
-                    <label for="section4-sideC">side c = </label>
+                </label>
+                <br>
+
+                <label for="section4-sideC">side c =
                     <input type="number" required id="section4-sideC" min="1">
                     <span>cm</span>
-                </div>
-                <div>
-                    <label for="section4-angleA">angle a = </label>
+                </label>
+                <br>
+
+                <label for="section4-angleA">angle a =
                     <input type="number" required id="section4-angleA" min="1" max="360">
                     <span>deg</span>
-                </div>
+                </label>
 
                 <button class="areaMethod-3 option">Calculate</button>
             </form>
         </article>
 
+    </section>
+
+    <section class="section5">
+
+        <h2>Here's a quiz about triangles</h2>
+        <h3>Best Of Luck 👍</h3>
+
+        <form action="#" class="section5-form">
+
+            <div class="question">
+                <p>1. If a triangle has angles 135&#176;, 15&#176;, 30&#176;. Is it an obtuse triangle?</p>
+
+                <label for="q1a1"><input type="radio" id="q1a1" class="quiz-answer" name="q1" required
+                        value="yes">Yes</label>
+                <label for="q1a2"><input type="radio" id="q1a2" class="quiz-answer" name="q1" required
+                        value="no">No</label>
+
+            </div>
+
+            <div class="question">
+
+                <p>2. If a triangle has angles 115&#176;, 25&#176;, 40&#176;. Is it an acute triangle?</p>
+
+                <label for="q2a1"><input type="radio" id="q2a1" class="quiz-answer" name="q2" required
+                        value="yes">Yes</label>
+                <label for="q2a2"><input type="radio" id="q2a2" class="quiz-answer" name="q2" required
+                        value="no">No</label>
+
+            </div>
+            <div class="question">
+                <p>3. If a triangle has angles 90&#176;, 60&#176;, 30&#176;. Is it a right angle triangle?</p>
+
+                <label for="q3a1"><input type="radio" id="q3a1" class="quiz-answer" name="q3" required
+                        value="yes">Yes</label>
+                <label for="q3a2"><input type="radio" id="q3a2" class="quiz-answer" name="q3" required
+                        value="no">No</label>
+            </div>
+            <div class="question">
+                <p>4. A triangle has angles 60&#176;, 60&#176;, 60&#176;. Is it an equilateral triangle?</p>
+
+                <label for="q4a1"><input type="radio" id="q4a1" class="quiz-answer" name="q4" required
+                        value="yes">Yes</label>
+                <label for="q4a2"><input type="radio" id="q4a2" class="quiz-answer" name="q4" required
+                        value="no">No</label>
+            </div>
+            <div class="question">
+                <p>5. If a triangle has angles 25&#176;, 75&#176;, 80&#176;. Is it an acute triangle?</p>
+
+                <label for="q5a1"><input type="radio" id="q5a1" class="quiz-answer" name="q5" required
+                        value="yes">Yes</label>
+                <label for="q5a2"><input type="radio" id="q5a2" class="quiz-answer" name="q5" required
+                        value="no">No</label>
+            </div>
+            <button class="quiz-btn option">Submit Quiz</button>
+
+        </form>
     </section>
 
     <p class="section-result result">Result</p>
