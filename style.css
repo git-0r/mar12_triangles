@@ -141,18 +141,8 @@ h4{
 }
 
 .back-btn {
-    height: 5vw;
-    width: 5vw;
-    border-radius: 50%;
-    border: 2px solid green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 5px;
-    left: 5px;
+    float: right;
     text-decoration: none;
-    color: white;
 }
 
 @media (max-width:900px) {
@@ -164,12 +154,15 @@ h4{
         font-size: 3vw;
     }
     .back-btn{
-        height: 8vw;
-        width: 8vw;
+        margin: 0.5rem auto;
+        padding: 0.5rem 1rem;
     }
 }
 
 @media (max-width:414px) {
+    body {
+        padding: 0 5vw;
+    }
     .option {
         font-size: 6vw;
     }
@@ -178,7 +171,7 @@ h4{
         ;
     }
     .back-btn{
-        height: 15vw;
-        width: 15vw;
+        margin: 0.2rem auto;
+    padding: 0.2rem 0.5rem;
     }
 }
