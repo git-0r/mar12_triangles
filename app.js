@@ -62,7 +62,7 @@ section3Form.addEventListener('submit', (event) => {
     // Math.sqrt(to get square root), Math.pow(value, power)- to find square
     const hypo = Math.sqrt(Math.pow(Number(base.value), 2) + Math.pow(Number(height.value), 2));
 
-    result.innerText = `hypotenuse is = ${hypo} cm`
+    result.innerText = `hypotenuse is = ${hypo.toFixed(2)} cm`
     correctResult();
 
 })
@@ -99,7 +99,7 @@ section4Form1.addEventListener('submit', (event) => {
     const base = document.querySelector('#section4-base');
     const height = document.querySelector('#section4-height');
 
-    result.innerText = `Area is = ${0.5 * Number(base.value) * Number(height.value)} sq cm`
+    result.innerText = `Area is = ${(0.5 * Number(base.value) * Number(height.value)).toFixed(2)} sq cm`
     correctResult();
 
 })
@@ -115,7 +115,7 @@ section4Form2.addEventListener('submit', (event) => {
     // checking if sum of two sides is greater than third side, otherwise it's not a triangle, also called The triangle inequality theorem
     if (sideA < (sideB + sideC) && sideB < (sideA + sideC) && sideC < (sideA + sideB)) {
         const s = (sideA + sideB + sideC) / 2;
-        result.innerText = `Area is = ${Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC))} sq cm`
+        result.innerText = `Area is = ${(Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC))).toFixed(2)} sq cm`
         correctResult();
     }
     else {
@@ -136,7 +136,7 @@ section4Form3.addEventListener('submit', (event) => {
     // multiply with 0.0174533 to convert degree to radians because Math.sin(takes angle in radians) and 1 deg = 0.0174533 rad
     // 1Deg × π/180 = 0.01745 Rad and 180deg = pi rad and pi = 3.14
 
-    result.innerText = `Area is = ${0.5 * sideB * sideC * Math.sin(angleA * 0.0174533)} sq cm`;
+    result.innerText = `Area is = ${(0.5 * sideB * sideC * Math.sin(angleA * 0.0174533)).toFixed(2)} sq cm`;
     correctResult();
 })
 
